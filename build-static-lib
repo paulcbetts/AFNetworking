@@ -1,0 +1,4 @@
+#!/bin/bash
+
+xcodebuild -project "AFNetworking Static Library.xcodeproj" -sdk iphonesimulator -configuration Release clean build
+xcodebuild -project "AFNetworking Static Library.xcodeproj" -sdk iphoneos -configuration Release clean build
