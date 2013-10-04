@@ -2,3 +2,4 @@
 
 xcodebuild -project "AFNetworking Static Library.xcodeproj" -sdk iphonesimulator -configuration Release clean build
 xcodebuild -project "AFNetworking Static Library.xcodeproj" -sdk iphoneos -configuration Release clean build
+lipo -create -output ./build/libAFNetworking.a ./build/Release-iphoneos/libAFNetworking.a ./build/Release-iphonesimulator/libAFNetworking.a
